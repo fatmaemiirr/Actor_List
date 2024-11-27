@@ -1,0 +1,149 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d3ffdc;
+  margin: 0;
+  padding: 0;
+  text-align: center; 
+}
+  body h1 {
+    color: #598161;
+    margin-top: 5px;
+    font-family: 'Bowlby One';
+    font-size: 95px; 
+  }
+  body p {
+    color: #598161;
+    margin-top: 0;
+    font-family: 'Bowlby One';
+    font-size: 25px; }
+  body #jsonKeys {
+    display: none; 
+  }
+  body .actors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px; 
+  }
+    body .actors-container .actor-card {
+      background-color: #bbecc2;
+      border: 2px solid #7fa887;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+      body .actors-container .actor-card h3 {
+        color: #598161;
+        margin: 10px 0;
+        font-size: 20px; 
+      }
+      body .actors-container .actor-card p {
+        font-size: 16px;
+        margin-bottom: 10px; 
+      }
+      body .actors-container .actor-card button {
+        background-color: #598161;
+        color: #fff;
+        border-radius: 4px;
+        padding: 8px 12px;
+        cursor: pointer;
+        border: 1px solid #1d3a22; 
+        width: 90px; 
+        height: 40px; 
+        font-size: 18px;
+      }
+        body .actors-container .actor-card button:hover {
+          background-color: #405e46; 
+        }
+  body .add-actor-btn {
+    margin-top: 20px;
+    background-color: #598161;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 3px solid #1d3a22;
+    width: 200px;
+    /* Buton genişliği */
+    height: 60px;
+    font-size: 20px; 
+  }
+    body .add-actor-btn:hover {
+      background-color: #405e46; 
+    }
+  body .custom-button {
+    background-color: #598161;
+    color: #e6e6e6;
+    padding: 10px 20px;
+    border: 2px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 200px;
+    height: 60px;
+    margin-top: 20px; 
+  }
+    body .custom-button:hover {
+      background-color: #405e46;
+      /* Hover efekti */ 
+    }
+  body .modal {
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 71, 51, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+    body .modal.hidden {
+      display: none; 
+    }
+    body .modal .modal-content {
+      background-color: #d0ebd3;
+      padding: 20px;
+      border-radius: 8px;
+      width: 350px;
+      text-align: center; 
+    }
+      body .modal .modal-content input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #1d3a22;
+        border-radius: 5px; 
+      }
+      body .modal .modal-content button {
+        background-color: #598161;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px; 
+      }
+        body .modal .modal-content button:hover {
+          background-color: #405e46;
+          /* Hover efekti */ 
+        }
+  body .initial-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #d3ffdc; 
+  }
+  body .hidden {
+    display: none; 
+  }
+
+/*# sourceMappingURL=styles.css.map */

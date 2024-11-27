@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Başlangıç Görseli -->
+
+  <div id="initial-screen" class="initial-screen"> 
+      <h1>Favori Aktörlerini Listele</h1> 
+      <p>Kolayca Listene Ulaşmak İçin Tıkla</p> 
+      <button class="custom-button" onclick="showActorList()">Listene ekleme yap...</button> </div> 
+    </div>
+
+  <!-- Aktör Listesi -->
+  <div id="actor-list-screen" class="hidden">
+    <h1>Aktör Listesi</h1>
+    <div id="jsonKeys"></div>
+    <div class="actors-container" id="actors-container">
+      <p id="loading-message">Aktörler yükleniyor...</p>
+    </div>
+    <button class="add-actor-btn" onclick="showModal()">+ Yeni Aktör Ekle</button>
+
+    <!-- Modal Penceresi -->
+    <div class="modal hidden" id="actor-modal">
+      <div class="modal-content">
+        <h2 id="modal-title">Aktör Ekle</h2>
+        <form id="actor-form">
+          <label for="actor-name">Aktör İsmi:</label>
+          <input type="text" id="actor-name" required />
+
+          <label for="actor-description">Açıklama:</label>
+          <input type="text" id="actor-description" />
+
+          <button type="submit">Kaydet</button>
+          <button type="button" onclick="closeModal()">İptal</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
